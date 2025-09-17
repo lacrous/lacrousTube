@@ -25,6 +25,7 @@ async def download_audio(update: Update, context: ContextTypes.DEFAULT_TYPE):
             'preferredquality': '192',
         }],
         'outtmpl': '%(title)s.%(ext)s',
+        'cookiefile': 'cookies.txt',
     }
 
     try:
@@ -50,4 +51,5 @@ def main():
     app.run_polling()
 
 if __name__ == '__main__':
+
     main()
